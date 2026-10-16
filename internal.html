@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #14213d;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #00d4ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #14213d, #2456a6);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            margin: 12px 0 25px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00d4ff;
+            color: #14213d;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #14213d;
+            font-size: 30px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px #00000012;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #2456a6;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #e5edfa;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        footer {
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Your Name</span></h1>
+        <p>Student | Aspiring Engineer | Technology Enthusiast</p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>
+                Hello! I am a college student passionate about technology,
+                programming, and innovation. I enjoy learning new skills
+                and developing projects that solve real-world problems.
+                My goal is to improve my technical knowledge and build
+                a successful career in the technology industry.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>My Education</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>College Degree</h3>
+                <p>Your College Name</p>
+                <p>Branch: Your Engineering Branch</p>
+                <p>Year: 2026 - Present</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>Your Junior College</p>
+                <p>Year: Add your year</p>
+            </div>
+
+            <div class="card">
+                <h3>School</h3>
+                <p>Your School Name</p>
+                <p>Year: Add your year</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Programming</h3>
+                <p>C / C++</p>
+                <p>Python</p>
+                <p>HTML & CSS</p>
+            </div>
+
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <p>Embedded Systems</p>
+                <p>Microcontrollers</p>
+                <p>Problem Solving</p>
+            </div>
+
+            <div class="card">
+                <h3>Soft Skills</h3>
+                <p>Communication</p>
+                <p>Teamwork</p>
+                <p>Time Management</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Student Portfolio</h3>
+                <p>A personal website created using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>7-Segment Display</h3>
+                <p>A microcontroller project using STM32 to display numbers.</p>
+            </div>
+
+            <div class="card">
+                <h3>Mini Project</h3>
+                <p>Add your project description and technologies used here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: yourname@example.com</p>
+        <p>Phone: Your phone number</p>
+        <p>Location: Your City</p>
+        <a class="btn" href="mailto:yourname@example.com">
+            Send Me an Email
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Name | Student Portfolio</p>
+    </footer>
+
+</body>
+</html>
